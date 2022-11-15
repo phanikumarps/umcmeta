@@ -11,11 +11,11 @@ RUN go mod download
 COPY cmd               ./cmd
 
 RUN ls /app/
-RUN CGO_ENABLED=0 GOOS=linux go build -v -a -o umcacct ./cmd/api
+RUN CGO_ENABLED=0 GOOS=linux go build -v -a -o ummeta ./cmd/api
 
 FROM scratch
 WORKDIR /app
-COPY --from=builder /app/umcacct /app/
+COPY --from=builder /app/ummeta /app/
 
 EXPOSE 8000
-ENTRYPOINT ["/app/umcacct"]
+ENTRYPOINT ["/app/ummeta"]

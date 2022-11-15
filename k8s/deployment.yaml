@@ -1,23 +1,23 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: umcacct
+  name: ummeta
   labels:
-    app: umcacct
+    app: ummeta
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: umcacct
+      app: ummeta
   template:
     metadata:
       labels:
-        app: umcacct
+        app: ummeta
     spec:
       containers:
-        - image: phanikumarps/umcacct:latest #change it to your image
+        - image: phanikumarps/ummeta:latest #change it to your image
           imagePullPolicy: Always
-          name: umcacct
+          name: ummeta
           ports:
             - name: http
               containerPort: 8000
@@ -25,9 +25,9 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: umcacct
+  name: ummeta
   labels:
-    app: umcacct
+    app: ummeta
 spec:
   ports:
     - name: http
@@ -35,4 +35,4 @@ spec:
       targetPort: 8000
       protocol: TCP
   selector:
-    app: umcacct
+    app: ummeta
