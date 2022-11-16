@@ -1,4 +1,4 @@
 github.com/gorilla/mux v1.8.0 h1:i40aqfkR1h2SlN9hojwV5ZA91wcXFOvkdNIeFDP5koI=
 github.com/gorilla/mux v1.8.0/go.mod h1:DVbg23sWSpFRCP0SfiEN6jmj59UnW/n46BH5rLB71So=
-github.com/phanikumarps/umc v0.0.0-20221114040643-c71fe66ff12e h1:GO1qIq6MH73iG0vPZ6oWX+a5SshyMmyAqcTYfuTT5qQ=
-github.com/phanikumarps/umc v0.0.0-20221114040643-c71fe66ff12e/go.mod h1:TRV3pDHIN4VpvKbTGY2017cB9s2bp77DsOZyAWvncos=
+github.com/phanikumarps/umc v0.0.0-20221115011819-9790a29132fe h1:U/bEN7IgApj+v/scISff9wQrqVOjUg0saKxJC4vXo50=
+github.com/phanikumarps/umc v0.0.0-20221115011819-9790a29132fe/go.mod h1:TRV3pDHIN4VpvKbTGY2017cB9s2bp77DsOZyAWvncos=

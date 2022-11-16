@@ -1,12 +1,12 @@
 apiVersion: gateway.kyma-project.io/v1beta1
 kind: APIRule
 metadata:
-  name: ummeta
+  name: umcmeta
 spec:
   gateway: kyma-gateway.kyma-system.svc.cluster.local
-  host: ummeta
+  host: umcmeta
   service:
-    name: ummeta
+    name: umcmeta
     port: 80
   rules:
     - path: /.*
